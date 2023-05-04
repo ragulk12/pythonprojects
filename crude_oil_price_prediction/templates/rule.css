@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{     width: 100%;
+height: 105vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.25)),url(crude\ oil.jpg); 
+background-size:cover;
+display: flex;
+align-items: center;
+justify-content: center;
+background-position: center;
+align-items: center;
+}
+
+.box{
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.80);
+    text-align: center;
+    color: gray;
+    border-radius: 2%;
+    font-size:13px;
+    font-family: sans-serif;
+}
+.box2{
+    width:50% ;
+    height: 65%;
+    background: rgba(0,0,0,0.80);
+    text-align: center;
+    color: gray;
+    border-radius: 2%;
+    font-size:20px;
+    font-family: sans-serif;
+
+}
+.link a{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    
+    padding: 14px 10px;
+    width: 100px;
+    outline:none;
+    color: white;
+    
+    transition:0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link a:hover{
+    
+    color:#B9B7BD;
+    font-weight: 700;
+    text-decoration: underline;
+     
+    
+    
+}
+
+

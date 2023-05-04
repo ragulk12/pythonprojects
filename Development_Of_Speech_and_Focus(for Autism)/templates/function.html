@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .backgroundimage {
+        width: 100%;
+        height: 100vh;
+      }
+      .totaldiv {
+        position: relative;
+      }
+      .logoutclass:active {
+        box-shadow: 0 2px 0 #006599;
+        transform: translateY(3px);
+      }
+      .logoutclass {
+        text-align: center;
+        width: 200px;
+        color: #0087cc;
+        font-size: 20px;
+        background: white;
+        /*position: absolute;*/
+        position: 100px;
+        top: 400px;
+        right: 145px;
+        font-style: oblique;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0 5px 0 #006599;
+        cursor: pointer;
+        margin: 0;
+        outline: 0;
+        padding: 12px 20px;
+        transition: all 0.1s linear;
+      }
+      a {
+        text-decoration: none;
+        color: #0087cc;
+        font-weight: bold;
+      }
+
+          .naviMenu 
+          {
+            list-style-type: none !important;
+          }
+   </style>
+  </head>
+  <body>
+    <div class="naviMenu">
+    <nav>
+    <ul>
+    <li><h1>WELCOME {{session["username"]}}</h1></ul></li>
+    <li style="float:right"><div class="logoutclass commonbox"><a href="/">Logout</a></div></li>
+    </ul>
+    </nav>
+  </div>
+    <a href="speech">Speech</a>
+    <a href="object">Object</a>
+    <a href="game">Game</a>
+  </body>
+</html>

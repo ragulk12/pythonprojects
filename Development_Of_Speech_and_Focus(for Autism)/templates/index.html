@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" id="zsiqchat">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        widgetcode:
+          "69c0e7560d77d406269ab24d28670fc43fbf4a36ec3aadd27f8a3e4e2118f650",
+        values: {},
+        ready: function () {},
+      };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zoho.in/widget";
+      t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+    </script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .backgroundimage {
+        width: 100%;
+        height: 100vh;
+      }
+      .totaldiv {
+        position: relative;
+      }
+
+      .registerclass {
+        text-align: center;
+        width: 200px;
+        color: #0087cc;
+        font-size: 20px;
+        background: white;
+        position: absolute;
+        top: 250px;
+        right: 145px;
+        font-style: oblique;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0 5px 0 #006599;
+        cursor: pointer;
+        margin: 0;
+        outline: 0;
+        padding: 12px 20px;
+        transition: all 0.1s linear;
+      }
+      .registerclass:active {
+        box-shadow: 0 2px 0 #006599;
+        transform: translateY(3px);
+      }
+      .loginclass:active {
+        box-shadow: 0 2px 0 #006599;
+        transform: translateY(3px);
+      }
+      .loginclass {
+        text-align: center;
+        width: 200px;
+        color: #0087cc;
+        font-size: 20px;
+        background: white;
+        position: absolute;
+        top: 400px;
+        right: 145px;
+        font-style: oblique;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0 5px 0 #006599;
+        cursor: pointer;
+        margin: 0;
+        outline: 0;
+        padding: 12px 20px;
+        transition: all 0.1s linear;
+      }
+      a {
+        text-decoration: none;
+        color: #0087cc;
+        font-weight: bold;
+      }
+      .mainimage {
+        border-radius: 35px;
+        width: 600px;
+        position: top;
+        position: absolute;
+        top: 25%;
+        left: 9%;
+      }
+      .logo {
+        width: 150px;
+        position: absolute;
+        top: 10px;
+        left: 2%;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="totaldiv">
+      <img
+        src="{{ url_for('static', filename='./backgroung.jpg') }}"
+        alt="bgimage"
+        class="backgroundimage"
+      />
+      <div>
+        <img
+          src="{{ url_for('static', filename='./image1.avif') }}"
+          alt="centerimage"
+          class="mainimage"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="{{ url_for('static', filename='./logo.png') }}"
+          alt="logoimage"
+          class="logo"
+        />
+      </div>
+    </div>
+
+    <nav>
+      <div class="registerclass commonbox">
+        <a href="register">Register</a>
+      </div>
+      <div class="loginclass commonbox">
+        <a href="login">Login</a>
+      </div>
+    </nav>
+  </body>
+</html>
